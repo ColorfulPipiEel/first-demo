@@ -1,15 +1,12 @@
-<!--
- * @Description: 首页
- * @Author: Ben
- * @Date: 2023-05-21 18:30:07
- * @LastEditors: Ben
- * @LastEditTime: 2023-05-21 18:30:38
- * @FilePath: \src\views\Layout\index.vue
--->
+<script setup>
+import LayoutNav from './components/layoutNav.vue'
+import LayoutHeader from './components/LayoutHeader.vue'
+import LayoutFooter from './components/LayoutFooter.vue'
+</script>
+
 <template>
-  <div>
-    我是首页
-    <!-- 二级路由出口 -->
-    <RouterView />
-  </div>
+  <LayoutNav />
+  <LayoutHeader />
+  <RouterView />
+  <LayoutFooter />
 </template>
