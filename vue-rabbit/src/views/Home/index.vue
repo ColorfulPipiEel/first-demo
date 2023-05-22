@@ -1,11 +1,17 @@
-<!--
- * @Description: home页
- * @Author: Ben
- * @Date: 2023-05-21 19:01:45
- * @LastEditors: Ben
- * @LastEditTime: 2023-05-21 19:02:01
- * @FilePath: \src\views\Home\index.vue
--->
+<script setup>
+import HomeCategory from './components/HomeCategory.vue'
+import HomeBanner from './components/HomeBanner.vue'
+import HomeNew from './components/HomeNew.vue'
+import HomeHot from './components/HomeHot.vue'
+import homeProduct from './components/HomeProduct.vue'
+</script>
+
 <template>
-  <div>我是home页</div>
+  <div class="container">
+    <HomeCategory />
+    <HomeBanner />
+  </div>
+  <HomeNew />
+  <HomeHot />
+  <homeProduct />
 </template>
